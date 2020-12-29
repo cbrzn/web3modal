@@ -34,5 +34,20 @@
   "dependencies": {
     "tslib": "^2.0.0",
     "@web3modal/core": "^0.0.1"
-  }
+  },
+  "scripts": {
+    "build": "ng-packagr -p package.json"
+  },
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/public-api.ts"
+    },
+    "whitelistedNonPeerDependencies": [
+      "tslib",
+      "@web3modal/core"
+    ]
+  },
+  "main": "dist/bundles/web3modal-angular.umd.js",
+  "types": "dist/public-api.d.ts"
 }
