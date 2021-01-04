@@ -60,6 +60,7 @@
     "tls": false,
     "crypto": false,
     "keccak": false,
-    "os": false
+    "os": false,
+    "global": true
   }
 }

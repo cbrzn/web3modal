@@ -1,35 +1,22 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "resolveJsonModule": true,
+    "baseUrl": "./",
     "sourceMap": true,
-    "strict": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "typeRoots": ["node_modules/@types"],
-    "skipLibCheck": true,
-    "allowJs": false,
-    "rootDirs": ["src"],
-    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "outDir": "dist",
+    "skipLibCheck": true,
     "target": "es2015",
     "module": "esnext",
-    "declaration": true,
-    "declarationMap": false,
-    "inlineSources": true,
-    "types": [],
-    "lib": ["dom", "es2018"]
-  },
-  "angularCompilerOptions": {
-    "skipTemplateCodegen": true,
-    "strictMetadataEmit": true,
-    "enableResourceInlining": true,
-    "enableIvy": false
-  },
-  "include": ["./src/**/*"],
-  "exclude": ["src/test.ts", "**/*.spec.ts"]
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  }
 }
